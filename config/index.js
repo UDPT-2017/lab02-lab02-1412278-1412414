@@ -1,7 +1,7 @@
-module.exports = function(app, express) {
-  require('./middlewares')(app, express);
+module.exports = function(app, passport, express) {
+  require('./middlewares')(app, passport, express);
 
   require('./views')(app);
 
-  require('./routes')(app);
+  require('./routes')(app, passport);
 };
