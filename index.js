@@ -1,6 +1,6 @@
 var express = require('express');
+
 var passport = require('passport');
-var http = require('http');
 
 var app = express();
 

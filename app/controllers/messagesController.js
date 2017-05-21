@@ -5,6 +5,7 @@ var messagesController = {
         layout: 'layout',
         activeLeftmenuMessages: 'active',
         activeNavbarMessages: 'active',
+        cssFile: 'messages',
         email: req.user.email
       });
     }
@@ -13,6 +14,7 @@ var messagesController = {
         layout: 'layout',
         activeLeftmenuUsers: 'active',
         activeNavbarUsers: 'active',
+        cssFile: 'messages'
       });
     }
   }

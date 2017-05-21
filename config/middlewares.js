@@ -24,4 +24,5 @@ module.exports = function(app, passport, express) {
     app.use(passport.initialize());
     app.use(passport.session());
     require('./passport')(passport);
+
 };
