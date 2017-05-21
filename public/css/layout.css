@@ -1,0 +1,66 @@
+footer {
+  background-color: rgb(54, 48, 52);
+  color: white;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.MySidebar {
+  background-color: rgb(255, 250, 249);
+  height: 100%;
+}
+
+.MySidebar a {
+  color:black;
+}
+
+.MySidebar a:hover {
+  background-color: rgb(182, 189, 181);
+}
+
+.MyNavbar {
+  background-color: rgb(54, 48, 52);
+}
+
+.MyNavbar div ul li a {
+  color: white;
+}
+
+.MyNavbar div ul li a:hover {
+  color: white;
+  background-color: green;
+}
+
+.MyMenuIcon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+a.active {
+  background-color: rgb(147, 148, 111);
+  color:black;
+}
+
+
+.container {
+  margin-bottom: 25px;
+}
+
+.SignUpInOutButton {
+    background-color: rgb(54, 48, 52);
+    border: none;
+    color: white;
+    margin: 14px 6px;
+}
+
+.SignUpInOutButton:hover {
+  color: yellow;
+}
+
+a.SignUpInOut:hover {
+  text-decoration: none;
+  background-color: transparent!important;
+  color: yellow!important;
+}

@@ -1,0 +1,36 @@
+<nav class="navbar MyNavbar">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#1" aria-expanded="false">
+              <div class="MyMenuIcon"></div>
+              <div class="MyMenuIcon"></div>
+              <div class="MyMenuIcon"></div>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="../images/hello-speech-bubble-handmade-chatting-symbol.png" style="height:30px; width: 45px;">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#2" aria-expanded="false">
+            <i class="fa fa-close" style="font-size:35px;color:red;"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="1">
+            <ul class="nav navbar-nav">
+                <li><a class="{{activeNavbarHome}}" href="/">Home</a></li>
+                <li><a class="{{activeNavbarUsers}}" href="/Users">Users</a></li>
+                <li><a class="{{activeNavbarAbout}}" href="/About">About</a></li>
+                <li><a class="{{activeNavbarMessages}}" href="/Messages">Messages</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{#if email}}
+                    <li><button class="SignUpInOutButton"><a class="SignUpInOut" href="/SignOut"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></button></li>
+                    <li><button class="SignUpInOutButton">Welcome {{email}}</button></li>
+                {{else}}
+                    <li><button class="SignUpInOutButton" data-toggle="collapse" data-target="#signInForm" aria-expanded="false"><a class="SignUpInOut" href="/SignUp"><span class="glyphicon glyphicon-user"></span> Sign up</a></button></li>
+                    <li><button class="SignUpInOutButton" data-toggle="collapse" data-target="#signInForm" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span> Sign in</button></li>
+                {{/if}}
+            </ul>
+        </div>
+
+    </div>
+</nav>
