@@ -1,0 +1,22 @@
+<div class="container  collapse" id="signInForm">
+    <h4>Sign in</h4>
+    <form method="post" action="/SignIn">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" name="user[email]" placeholder="Please input your email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="user[password]" placeholder="Please input your password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox">Remember email and password</label>
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+        {{#if SignInError}}
+        <div class="alert alert-danger" style="margin-top: 10px;">
+            {{SignInError}}
+        </div>
+        {{/if}}
+    </form>
+</div>
