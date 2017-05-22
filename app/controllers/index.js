@@ -6,3 +6,4 @@ module.exports = {
   signup: require('./signUpController'),
   signout: require('./signOutController')
 };
+

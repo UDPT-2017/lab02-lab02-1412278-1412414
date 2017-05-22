@@ -1,4 +1,5 @@
 var aboutController = {
+
     index: function(req, res) {
         if (req.user) {
             res.render('about/index', {
@@ -17,6 +18,9 @@ var aboutController = {
             });
         }
     }
+
+
+
 };
 
 module.exports = aboutController;

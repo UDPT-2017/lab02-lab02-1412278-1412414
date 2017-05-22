@@ -1,4 +1,5 @@
 var pg = require('pg');
+
 var pool = require('../lib/db');
 
 var messages = {
@@ -40,3 +41,4 @@ var messages = {
 };
 
 module.exports = messages;
+
