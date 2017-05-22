@@ -21,7 +21,7 @@ Yêu cầu **GIT**
 Yêu cầu **bắt buộc**
 * [x] Website layout theo kiến trúc MVC với các thành phần được tách thành nhiều module theo hướng dẫn. (**1412278**)
 * [x] Trang web được thiết kế sẽ bao gồm các trang: home, messages, users, about. (**1412278**)
-* [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1412278**)
+* [x] Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...). (**1412414**)
 * [x] Cho phép người dùng đăng ký tài khoản bằng các thông tin: email, password, name, phone.(**1412414**)
 * [x] Đăng nhập bằng email và password.(**1412414**)
 * [x] Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ tự thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi.(**1412278**)
@@ -55,11 +55,15 @@ Link ảnh GIF demo ứng dụng:
 ![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/DangKy.gif)
 2. Đăng nhập bằng email và password.
 ![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/DangNhap_DangXuat.gif)
-3. Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè. Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.
+3. Sau khi đăng nhập, người dùng sẽ được chuyển đến trang liệt kê danh sách các tin nhắn đã nhận, sắp xếp theo thứ  tự  thời gian, một nút để tạo tin nhắn mới, nút để xem danh sách bạn bè và nút để xem các tin nhắn đã gửi.(1412278)
+4. Tin nhắn chưa đọc phải được làm nổi bật hơn các tin nhắn khác(1412278)
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/HienThiTinNhan.gif)
+5. Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè. Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.
 ![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/Users_ThemBan.gif)
-4. Nhấn nút "new message" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua combobox.
+6. Nhấn nút "new message" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua combobox.
 ![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/themTinNhan.gif)
-
+7. Trang about hien thi ra thong tin cua nhom
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/About.gif)
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
 
