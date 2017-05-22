@@ -13,7 +13,9 @@ module.exports = function(app, passport) {
         .post('/',controllers.users.addFriend);
 
     var messagesRoutes = router()
-        .get('/', controllers.messages.index);
+        .get('/', controllers.messages.index)
+        .get('/NewMessage', controllers.messages.sendMessage)
+        .post('/NewMessage', controllers.messages.sendNewMessage);
 
     var signUpRoutes = router()
         .get('/', controllers.signup.index)

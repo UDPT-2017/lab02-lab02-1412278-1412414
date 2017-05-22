@@ -1,44 +1,39 @@
 <div class="row">
-  <div class="col-md-10">
-
-    <h1> Your messages </h1> {{errorMessage}}
-  </div>
-</div>
-
-{{#each result}}
-  <div class="row">
     <div class="col-md-10">
-      <div class = "panel-group">
-
-  {{#if this.status }}
-      <div class="panel panel-default">
-          <div class="panel-heading">{{this.name}}</div>
-          <div class="panel-body"> {{this.timesend}} <br> {{this.contenttext}}
-          </div>
-      </div>
-      {{else}}
-        <div class="panel panel-danger">
-          <div class="panel-heading">
-            <p> {{this.name}} </p>
-            <p> Unread Messages </p>
-          </div>
-          <div class="panel-body"> {{this.timesend}} <br>
-             {{this.contenttext}}
-          </div>
-        </div>
-        {{/if}}
-      </div>
+        <h1> Your messages </h1> {{errorMessage}}
     </div>
-  </div>
-{{/each}}
-
-<div class="row">
-  <div class="col-md-4">
-    <button type="button" class="btn btn-primary btn-lg">List Friend</button>
-    <button type="button" class="btn btn-success btn-lg">Sended</button>
-    </br>
-    <button type="button" class="btn btn-info btn-lg">Create New Message</button>
-
-
-  </div>
 </div>
+{{#each result}}
+    <div class="row">
+        <div class="col-md-10">
+            <div class="panel-group">
+                {{#if this.status }}
+                    <div class="panel panel-default">
+                        <div class="panel-heading">{{this.name}}</div>
+                        <div class="panel-body"> {{this.timesend}} <br> {{this.contenttext}}
+                        </div>
+                    </div>
+                {{else}}
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <p> {{this.name}} </p>
+                            <p> Unread Messages </p>
+                        </div>
+                        <div class="panel-body"> {{this.timesend}} <br> {{this.contenttext}}
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+{{/each}}
+{{#if isAuthenticated}}
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary btn-lg">List Friend</button>
+            <button type="button" class="btn btn-success btn-lg">Sended</button>
+            <br>
+            <button type="button" id="createMessage" class="btn btn-info btn-lg"><a style="text-decoration: none" href="/Messages/NewMessage">Create New Message</a></button>
+        </div>
+    </div>
+{{/if}}
