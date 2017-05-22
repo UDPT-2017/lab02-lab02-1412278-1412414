@@ -1,7 +1,10 @@
 var express = require('express');
+
+var passport = require('passport');
+
 var app = express();
 
-require('./config')(app, express);
+require('./config')(app, passport, express);
 
 //start server
 var port = 3000;
