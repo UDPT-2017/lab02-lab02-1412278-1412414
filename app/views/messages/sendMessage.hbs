@@ -1,0 +1,51 @@
+<div class="container">
+    <h2>Friends</h2>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Friends
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            {{#each result}}
+                <li><a href="#">{{this.email}}</a></li>
+                <li class="divider"></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <form>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="20" id="message"></textarea>
+        </div>
+        <button type="submit" id="sendbtn" class="btn btn-primary">Send</button>
+    </form>
+    <div class="alert alert-danger" id="err">
+        There has been an error
+    </div>
+    <div class="alert alert-success" id="success">
+        Sent successfully!!!
+    </div>
+</div>
+
+<script>
+    $("#err").hide();
+    $("#success").hide();
+    $(document).ready(function() {
+        $("ul.dropdown-menu a").click(function() {
+            $("button.dropdown-toggle").text($(this).text());
+            $("button.dropdown-toggle").append(' <span class="caret"></span>');
+        });
+
+        $("#senbtn").click(function() {
+            $post("/Messages/NewMessage", {
+                email: $("button.dropdown-toggle").text()
+            }, function(message) {
+                if (message.err) {
+                    $("#err").show();
+                } else {
+                    $("#success").show();
+                }
+            });
+        });
+    });
+</script>
