@@ -1,0 +1,46 @@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Is friend</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each result}}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.phone}}</td>
+                    <td>
+                        {{#if this.isfriend}}
+                            <button type="button" class="btn btn-primary">Unfriend</button>
+                        {{else}}
+                            <button type="button" class="btn btn-primary">add</button>
+                        {{/if}}
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".btn-primary").click(function() {
+            var $tr = $(this).closest("tr");
+            var $td = $tr.children('td').eq(1);
+
+            $.post("/Users", {
+                friend: $td.text()
+            }, function(message) {
+                if (message.error) {
+                    alert('There is an error which occured');
+                }
+            });
+
+            $(this).text("Unfriend");
+        });
+    });
+</script>
