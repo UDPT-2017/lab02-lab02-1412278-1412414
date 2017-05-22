@@ -52,13 +52,13 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link ảnh GIF demo ứng dụng:
 1. Cho phép người dùng đăng ký tài khoản bằng các thông tin: email, password, name, phone.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/tree/master/demo/DangKy.gif)
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/demo/DangKy.gif)
 2. Đăng nhập bằng email và password.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/tree/master/demo/DangNhap_DangXuat.gif)
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/demo/DangNhap_DangXuat.gif)
 3. Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè. Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/tree/master/demo/Users_ThemBan.gif)
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/demo/Users_ThemBan.gif)
 4. Nhấn nút "new message" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua combobox.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/tree/master/demo/themTinNhan.gif)
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/demo/themTinNhan.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
