@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412278** Phan Khánh Lâm (lam0196vn)
 * [x] **1412414** Vương Thiên Phú (1412414)
 
-URL: **URL hosting của bài tập**
+URL: **https://lab02-1412278-1412414.herokuapp.com/**
 
 ## Yêu cầu
 
@@ -51,14 +51,10 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
-1. Cho phép người dùng đăng ký tài khoản bằng các thông tin: email, password, name, phone.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/DangKy.gif)
-2. Đăng nhập bằng email và password.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/DangNhap_DangXuat.gif)
-3. Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè. Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/Users_ThemBan.gif)
-4. Nhấn nút "new message" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua combobox.
-![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/themTinNhan.gif)
+1. Cho phép người dùng đăng ký tài khoản bằng các thông tin: email, password, name, phone. Đăng nhập bằng email và password.
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/dangky.gif)
+2. Trang users cho phép xem danh sách người dùng có trong hệ thống và phải có nút "add" với những người dùng chưa là bạn để thêm vào danh sách bạn bè. Chuyển nút "add" thành nút "remove" sau khi thêm bạn thành công. Nhấn nút "new message" sẽ chuyển sang giao diện cho phép người dùng gửi tin nhắn cho người dùng trong danh sách bạn bè. Người gửi phải nằm trong danh sách bạn bè và cho phép người dùng chọn qua combobox.
+![Video Walkthrough](https://github.com/UDPT-2017/lab02-lab02-1412278-1412414/blob/master/Demo/xemUsersVaThemBanVaGuiTinNhanChoBan.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
